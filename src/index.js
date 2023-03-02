@@ -6,12 +6,11 @@ let attempts = 0;
 
 function createTable() {
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  const wordRow = Math.floor(Math.random() * 6); // generar un número aleatorio entre 0 y 5 para la fila de la palabra
-
+  const wordRow = Math.floor(Math.random() * 6);
   for (let i = 0; i < 6; i++) {
     const row = document.createElement("div");
     row.className = "row";
-    if (i === wordRow) { // usar el número aleatorio para determinar la fila de la palabra
+    if (i === wordRow) {
       for (let j = 0; j < word.length; j++) {
         const input = document.createElement("input");
         input.maxLength = "1";
